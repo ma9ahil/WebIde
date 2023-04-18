@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <button onclick="genCode()">Run</button>
+        <button onclick="execAndGetPHPOutput()">Execute</button>
+
+
+        <div id="part1">
+            <div id="blocks">
+                <div data-operation="varblock" draggable="true" class="block" >Var</div>
+                <div data-operation="forblock" draggable="true" class="block" >For</div>
+                <div data-operation="Arithblock" draggable="true" class="block" >Aritmatic operations</div>
+                <div data-operation="functionblock" draggable="true" class="block" >Function</div>
+                <div data-operation="ifblock" draggable="true" class="block" >If</div>
+                <div data-operation="outputblock" draggable="true" class="block" >Print</div>
+            </div>
+            
+        </div>
+        <div id="drop""></div>
+        <div id="part2">
+            <pre>
+            <div id="code">
+                
+            </div>
+        </pre>
+            <div id="output">
+                
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+<script src="index.js"></script>
+
+
+
+// code remove from drop  ondrop="drop_handler(event)" ondragover="dragover_handler(event)
+</html>
+
+
